@@ -1,0 +1,17 @@
+
+
+
+
+
+
+<div class="container" ng-controller="WelcomeController">
+    <div class="col-md-offset-2">
+        <div>
+            <h1>{{heading + message}}</h1>
+            <!-- For a second you will see the angular -->
+            <input ng-model="name" type="text" placeholder="Enter Your Name Here">
+        </div>
+        <button ng-click="updateMessage()" class="btn btn-success btn-hello"> Hello </button>
+        <button ng-click="goodByeMessage()" class="btn btn-danger btn-bye"> Goodbye </button>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+
+
+
+
+
+<div class="container" ng-controller="BallAnimate">
+    <div class="ball1 btn"></div>
+    <div class="ball2 btn"></div>
+    <div class="ball3 btn"></div>
+    <div class="clear btn"></div>
+    <div ng-repeat="toggle in toggles">
+        <div class="btn" ng-click="toggle.state = !toggle.state" ng-class="{'red' : toggle.state}"></div>
+    </div>
+</div>
+
+<!--<div class="container" ng-controller="BallAnimate">-->
+    <!--<button>-->
+        <!--<div ng-click="style={background-color: red}" class="btn ball1"></div>-->
+        <!--<div ng-click="style={background-color: orange}" class="btn ball2"></div>-->
+        <!--<div ng-click="style={background-color: yellow}" class="btn ball3"></div>-->
+
+        <!--<div class="btn clear" value="clear" ng-click="clear={}"></div>-->
+
+    <!--<br/>-->
+
+    <!--<div data-ng-switch="wave" data-ng-animate="'wave'">-->
+        <!--<div ng-switch-when="one"> Prime </div>-->
+        <!--<div ng-switch-when="two"> Digital </div>-->
+        <!--<div ng-switch-when="three"> Academy </div>-->
+    <!--</div>-->
+
+<!--</div>-->
+<!--</div>-->

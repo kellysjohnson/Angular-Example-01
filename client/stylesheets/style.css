@@ -1,8 +1,65 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/*body {*/
+  /*padding: 50px;*/
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+/*}*/
+
+/*a {*/
+  /*color: #00B7FF;*/
+/*}*/
+
+.space {
+  height: 10px;
 }
 
-a {
-  color: #00B7FF;
+.ball1 {
+  height: 50px;
+  width: 50px;
+  background-color: hotpink;
+  outline-color: deeppink;
+  outline-width: 20px;
+  border-radius: 50%;
+}
+
+.ball2 {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  outline-color: darkgreen;
+  outline-width: 20px;
+  border-radius: 50%;
+}
+
+.ball3 {
+  height: 50px;
+  width: 50px;
+  background-color: dodgerblue;
+  outline-color: blue;
+  outline-width: 20px;
+  border-radius: 50%;
+}
+
+.clear {
+  height: 50px;
+  width: 50px;
+  border-color:black;
+  border-width: 5px;
+  outline-width: 20px;
+  border-radius: 50%;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+  color:white;
+  font-size: 20px;
+}
+
+li:nth-child(odd) {
+  background-color: darkgreen;
+  border-radius: 5px;
+}
+
+li:nth-child(even) {
+  background-color: #265a88;
+  border-radius: 5px;
 }

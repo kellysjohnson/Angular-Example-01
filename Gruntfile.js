@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: 'client//scripts/app.js',
+                src: 'client/scripts/app.js',
                 dest: 'public/javascripts/app.min.js'
             }
         },
@@ -49,9 +49,10 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: "client",
                 src: [
-                    "views/sample.html"
+                    "userinfo.html",
+                    "ballanimate.html"
                 ],
-                "dest": "public/"
+                "dest": "public/views"
             }
         }
     });

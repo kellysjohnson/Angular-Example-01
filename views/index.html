@@ -1,12 +1,44 @@
 <!doctype html>
-<html>
+<html ng-app="myApp">
     <head>
         <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
-
+        <link rel="stylesheet" href="/stylesheets/style.css">
     </head>
 
-    <body>
+    <div>
+        <!--<ng-include src="'/views/userinfo.html'"></ng-include>-->
+        <!--<div class="space"></div>-->
+        <!--<ng-include src="'/views/ballanimate.html'"></ng-include>-->
+
+        <ng-include src="'/views/navigationOptions.html'"></ng-include>
+        <div>
+            <h1>{{heading}}</h1>
+
+        </div>
+        <!-- Because of CORS, run local host, and the syntax is a bit tricky - must HAVE singles inside DOUBLES-->
+
+        <!--- Should be CUT OUT---->
+        <!--<div class="container" ng-controller="WelcomeController">-->
+            <!--<div class="col-md-offset-2">-->
+                <!--<div>-->
+                    <!--<h1>{{heading + message}}</h1>-->
+                    <!--&lt;!&ndash; For a second you will see the angular &ndash;&gt;-->
+                    <!--<input ng-model="name" type="text" placeholder="Enter Your Name Here">-->
+                <!--</div>-->
+                <!--<button ng-click="updateMessage"> Update </button>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!-- Should be CUT OUT for SURE -->
+
+
+        <!-- ng model says, I recognize I am in an input field, so whatever is input is BOUND to the variable NAME-->
+        <!-- Us entering something into the input field is CONTROLLING what is being displayed-->
+        <!-- You can associate your ng app with a DIV, though most commonly it will be associated with an html tag-->
+       <!-- Two way data binding is essentially 'live update' to the DOM-->
         <script type="text/javascript" src="/vendor/angular/angular.min.js"></script>
-        <script type="text/javascript" src="/javascripts/app.min.js"></script>
+        <script type="text/javascript" src="/javascripts/app.js"></script>
+
+    </div>
+
     </body>
 </html>

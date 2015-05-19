@@ -1,0 +1,25 @@
+
+
+
+
+<div class="container" ng-controller="FriendsList">
+        <div ng-init="friends = [
+              {name:'Jacob', age:43, gender:'boy', superhero: 'Captain Caveman'},
+              {name:'Annabelle', age:11, gender:'girl', superhero: 'Ninja Meer Kats'},
+              {name:'Samantha', age:9, gender:'girl', superhero: 'Mulan'},
+              {name:'Isaac', age:24, gender:'boy', superhero: 'Green Lantern'},
+              {name:'Amanda', age:23, gender:'girl', superhero: 'Flash'},
+              {name:'Kodi', age:21, gender:'boy', superhero: 'Captain America'},
+            ]">
+            <bold>I have {{friends.length}} friends with favorite superheros. They are:</bold>
+            <input type="search" ng-model="letters" placeholder="filter by superhero" aria-label="filter friends" />
+            <ul class="example-animate-container">
+                <li class="animate-repeat" "ball1" ng-repeat="friend in friends | filter:letters as results">
+                    {{friend.name}}. {{friend.name}}'s favorite superhero is {{friend.superhero}}.
+                </li>
+                <li class="animate-repeat" ng-if="results.length == 0">
+                    <strong>No results found...</strong>
+                </li>
+            </ul>
+        </div>
+    </div>

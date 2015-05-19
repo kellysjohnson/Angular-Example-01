@@ -1,0 +1,17 @@
+
+
+
+<div class="container" ng-controller="BallAnimate">
+    <div ng-mousemove="count = count + 1" ng-init="count=0" class="ball3">
+    </div>
+    count: {{count}}
+
+
+    <div class="ball1 btn"></div>
+    <div class="ball2 btn"></div>
+    <div class="ball3 btn"></div>
+    <div class="clear btn"></div>
+    <div ng-repeat="toggle in toggles">
+        <div class="btn" ng-click="toggle.state = !toggle.state" ng-class="{'red' : toggle.state}"></div>
+    </div>
+</div>
