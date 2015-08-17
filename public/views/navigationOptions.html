@@ -11,12 +11,13 @@
               {name:'Amanda', age:23, gender:'girl', superhero: 'Flash'},
               {name:'Kodi', age:21, gender:'boy', superhero: 'Captain America'},
             ]">
-            <bold>I have {{friends.length}} friends with favorite superheros. They are:</bold>
-            <input type="search" ng-model="letters" placeholder="filter by superhero" aria-label="filter friends" />
+            I have {{friends.length}} friends. They are:
+            <input type="search" ng-model="q" placeholder="filter friends..." aria-label="filter friends" />
             <ul class="example-animate-container">
-                <li class="animate-repeat" "ball1" ng-repeat="friend in friends | filter:letters as results">
-                    {{friend.name}}. {{friend.name}}'s favorite superhero is {{friend.superhero}}.
-                </li>
+                <!--<li class="animate-repeat" ng-repeat="friend in friends">-->
+                <!--[{{$index + 1}}] {{friend.name}} who is {{friend.age}} years old.-->
+                <!--</li>-->
+                <li ng-repeat="friend in friends"> {{friend.superhero}} {{friend.name}} {{friend.age}} {{friend.gender}} </li>
                 <li class="animate-repeat" ng-if="results.length == 0">
                     <strong>No results found...</strong>
                 </li>

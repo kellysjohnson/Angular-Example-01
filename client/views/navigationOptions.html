@@ -14,8 +14,10 @@
     I have {{friends.length}} friends. They are:
     <input type="search" ng-model="q" placeholder="filter friends..." aria-label="filter friends" />
     <ul class="example-animate-container">
-        <li class="animate-repeat" ng-repeat="friend in friends | filter:q as results">
-            [{{$index + 1}}] {{friend.name}} who is {{friend.age}} years old.
+        <!--<li class="animate-repeat" ng-repeat="friend in friends">-->
+            <!--[{{$index + 1}}] {{friend.name}} who is {{friend.age}} years old.-->
+        <!--</li>-->
+        <li ng-repeat="friend in friends">"Friend number" + {{friends.index}} + "Friend name" + {{friends.name}} + "Friend votes" + {{friends.votes}}
         </li>
         <li class="animate-repeat" ng-if="results.length == 0">
             <strong>No results found...</strong>
