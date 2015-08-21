@@ -4,12 +4,12 @@
 
 <div class="container" ng-controller="FriendsList">
         <div ng-init="friends = [
-              {name:'Jacob', age:43, gender:'boy', superhero: 'Captain Caveman'},
-              {name:'Annabelle', age:11, gender:'girl', superhero: 'Ninja Meer Kats'},
-              {name:'Samantha', age:9, gender:'girl', superhero: 'Mulan'},
-              {name:'Isaac', age:24, gender:'boy', superhero: 'Green Lantern'},
-              {name:'Amanda', age:23, gender:'girl', superhero: 'Flash'},
-              {name:'Kodi', age:21, gender:'boy', superhero: 'Captain America'},
+              {id: '1', name:'Jacob', age:43, gender:'boy', superhero: 'Captain Caveman'},
+              {id: '2', name:'Annabelle', age:11, gender:'girl', superhero: 'Ninja Meer Kats'},
+              {id: '3', name:'Samantha', age:9, gender:'girl', superhero: 'Mulan'},
+              {id: '4', name:'Isaac', age:24, gender:'boy', superhero: 'Green Lantern'},
+              {id: '5', name:'Amanda', age:23, gender:'girl', superhero: 'Flash'},
+              {id: '6', name:'Kodi', age:21, gender:'boy', superhero: 'Captain America'},
             ]">
             I have {{friends.length}} friends. They are:
             <input type="search" ng-model="q" placeholder="filter friends..." aria-label="filter friends" />
@@ -17,7 +17,7 @@
                 <!--<li class="animate-repeat" ng-repeat="friend in friends">-->
                 <!--[{{$index + 1}}] {{friend.name}} who is {{friend.age}} years old.-->
                 <!--</li>-->
-                <li ng-repeat="friend in friends"> {{friend.superhero}} {{friend.name}} {{friend.age}} {{friend.gender}} </li>
+                <li ng-repeat="friend in friends" id="{{friend.id}}"> {{friend.superhero}} {{friend.name}} {{friend.age}} {{friend.gender}} <button class="btn btn-sm">Click</button> </li>
                 <li class="animate-repeat" ng-if="results.length == 0">
                     <strong>No results found...</strong>
                 </li>

@@ -69,6 +69,14 @@ li:nth-child(even) {
   overflow-y: hidden;
   white-space: nowrap;
 }
+
 .myScrollContent li {
-  display: inline;
+}
+
+button {
+  color: white;
+  background-color: deeppink;
+  border-color:dimgray;
+  border-width: 3px;
+
 }
