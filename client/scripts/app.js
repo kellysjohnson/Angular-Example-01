@@ -56,6 +56,11 @@ console.log("Script Loaded");
      myApp.controller('FriendsList', ["$scope", function($scope){
          $scope.heading = "Friends and Family";
 
+         var clickId = function() {
+             var thisID = this;
+             var getElement = document.getElementById('thisID');
+         }
+
          $scope.append = function (){
 
          }
