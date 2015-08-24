@@ -17,12 +17,13 @@
                 <!--<li class="animate-repeat" ng-repeat="friend in friends">-->
                 <!--[{{$index + 1}}] {{friend.name}} who is {{friend.age}} years old.-->
                 <!--</li>-->
-                <li ng-repeat="friend in friends" id="{{friend.id}}"> {{friend.superhero}} {{friend.name}} {{friend.age}} {{friend.gender}} <button class="btn btn-sm" ng-click="pickId">Click</button> </li>
+                <li ng-repeat="friend in friends" id="{{friend.id}}"> {{friend.superhero}} {{friend.name}} {{friend.age}} {{friend.gender}} <button class="btn btn-sm" ng-click="clickId()">Click</button> </li>
                 <li class="animate-repeat" ng-if="results.length == 0">
                     <strong>No results found...</strong>
                 </li>
                 <!-- divs resulted in no style because I styled the 'li's' in my css.
                      thead and td do not work at all in terms of presenting the objects in ng-repeat.  ...maybe have to use li's?-->
             </ul>
+
         </div>
     </div>

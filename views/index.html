@@ -6,9 +6,10 @@
     </head>
 
     <!--<div>-->
-        <ng-include src="'/views/navigationOptions.html'"></ng-include>
-
-
+        <!--<ng-include src="'/views/navigationOptions.html'"></ng-include>-->
+        <div class="start" ng-controller="FriendsList">
+            <button ng-click="buttonSo()" class="btn btn-lg">Click Me!</button>
+        </div>
         <!--<div class="container" ng-controller="Welcome">-->
                 <!--<div>-->
                     <!--<h1 class="ng-cloak">{{heading + message}}</h1>-->
@@ -31,7 +32,7 @@
         <!--</div>-->
         <!-- Because of CORS, run local host, and the syntax is a bit tricky - must HAVE singles inside DOUBLES-->
 
-        <!--- Should be CUT OUT---->
+        <!-- Should be CUT OUT -->
         <!--<div class="container" ng-controller="WelcomeController">-->
             <!--<div class="col-md-offset-2">-->
                 <!--<div>-->
@@ -42,13 +43,14 @@
                 <!--<button ng-click="updateMessage" ng-cloak()> Update </button>-->
             <!--</div>-->
         <!--</div>-->
-        <!-- Should be CUT OUT for SURE -->
+         <!--Should be CUT OUT for SURE -->
 
 
         <!-- ng model says, I recognize I am in an input field, so whatever is input is BOUND to the variable NAME-->
         <!-- Us entering something into the input field is CONTROLLING what is being displayed-->
         <!-- You can associate your ng app with a DIV, though most commonly it will be associated with an html tag-->
        <!-- Two way data binding is essentially 'live update' to the DOM-->
+
         <script type="text/javascript" src="/vendor/angular/angular.min.js"></script>
         <script type="text/javascript" src="/javascripts/app.min.js"></script>
     </body>

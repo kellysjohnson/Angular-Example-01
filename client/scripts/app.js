@@ -13,11 +13,11 @@ console.log("Script Loaded");
 
 
 //var myApp = angular.module('myApp', []);
-
+//
 //myApp.controller('GreetingController', ['$scope', function($scope) {
 //    $scope.greeting = 'Hola!';
 //}]);
-
+//
 //    myApp.controller('Welcome', ["$scope", function($scope){
 //        $scope.heading = "Message: ";
 //
@@ -50,18 +50,26 @@ console.log("Script Loaded");
 //
 //    }]);
 
-    //Will Now Try to Make a Navigation Menu
+    ////Will Now Try to Make a Navigation Menu
      var myApp = angular.module('myApp', []);
 
      myApp.controller('FriendsList', ["$scope", function($scope){
          $scope.heading = "Friends and Family";
+    //     $scope.hi = console.log('hi');
+    //     $scope.thisID ='';
+    //
+    //     //var clickId = function(thing) {
+    //     //    $scope.thisID = thing;
+    //     //    console.log(thisID, $scope);
+    //     //
+    //     //    var getEl = document.getElementById('thisID');
+    //     //    console.log(getEl);
+    //     //};
+         $scope.count = 5;
+         $scope.log = console.log($scope.count);
+    //
+        $scope.buttonSo = function(){
+             $scope.message = $scope.count + 1;
+        };
 
-         var clickId = function() {
-             var thisID = this;
-             var getElement = document.getElementById('thisID');
-         }
-
-         $scope.append = function (){
-
-         }
      }]);
