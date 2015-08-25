@@ -13,16 +13,19 @@ console.log("Script Loaded");
 
 
 //var myApp = angular.module('myApp', []);
-//
+
 //myApp.controller('GreetingController', ['$scope', function($scope) {
 //    $scope.greeting = 'Hola!';
 //}]);
 //
 //    myApp.controller('Welcome', ["$scope", function($scope){
 //        $scope.heading = "Message: ";
+//        $scope.count = '5';
 //
 //        $scope.updateMessage = function(){                              //Making up a function that we are tying to the scope called "update message".
 //            $scope.message = "Hello, " + $scope.name + "!";
+//            $scope.count += 1;
+//            console.log($scope.count);
 //        };
 //
 //        $scope.goodByeMessage = function(){                              //Making up a function that we are tying to the scope called "update message".
@@ -55,21 +58,24 @@ console.log("Script Loaded");
 
      myApp.controller('FriendsList', ["$scope", function($scope){
          $scope.heading = "Friends and Family";
-    //     $scope.hi = console.log('hi');
-    //     $scope.thisID ='';
+         $scope.hi = console.log('hi');
+         $scope.thisID ='';
+
+         $scope.clickHere = function() {
+             $scope.thisID = 'thing';
+             console.log($scope.thisID);
+
+             var getEl = document.getElementById(5);
+                console.log(getEl);
+         };
+
     //
-    //     //var clickId = function(thing) {
-    //     //    $scope.thisID = thing;
-    //     //    console.log(thisID, $scope);
-    //     //
-    //     //    var getEl = document.getElementById('thisID');
-    //     //    console.log(getEl);
     //     //};
-         $scope.count = 5;
-         $scope.log = console.log($scope.count);
-    //
-        $scope.buttonSo = function(){
-             $scope.message = $scope.count + 1;
-        };
+    //     $scope.count = 5;
+    //     $scope.log = console.log($scope.count);
+    ////
+    //    $scope.buttonSo = function(){
+    //         $scope.message = $scope.count + 1;
+    //    };
 
      }]);
